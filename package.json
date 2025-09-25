@@ -1,0 +1,65 @@
+{
+  "name": "@spiderseek/astro-analytics",
+  "version": "1.0.4",
+  "description": "An Astro Integration for Spiderseek AI Analytics and Tracking.",
+  "keywords": [
+    "astro",
+    "withastro",
+    "astro-component",
+    "analytics",
+    "seo",
+    "spiderseek"
+  ],
+  "type": "module",
+  "sideEffects": false,
+  "engines": {
+    "node": ">=18.17"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "prepare": "npm run build"
+  },
+  "peerDependencies": {
+    "astro": "^4.0.0 || ^5.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.5.2",
+    "astro": "^4.16.19",
+    "tsup": "^7.2.0",
+    "typescript": "^5.9.2"
+  },
+  "author": "Spiderseek",
+  "license": "MIT",
+  "tsup": {
+    "entry": [
+      "src/index.ts"
+    ],
+    "format": [
+      "esm"
+    ],
+    "dts": true,
+    "clean": true,
+    "platform": "node",
+    "target": "node18",
+    "treeshake": true,
+    "minify": false,
+    "sourcemap": true
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
