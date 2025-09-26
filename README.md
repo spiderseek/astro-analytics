@@ -106,7 +106,7 @@ After (with `@spiderseek/astro-analytics`):
 Clone and build locally:
 
 ```bash
-git clone https://github.com/your-org/spiderseek-astro-analytics.git
+git clone https://github.com/spiderseek/astro-analytics.git
 cd spiderseek-astro-analytics
 npm install
 npm run build
@@ -116,4 +116,4 @@ npm run build
 
 ## 📄 License
 
-MIT © [Spiderseek](https://spiderseek.com)
+MIT © [Spiderseek](https://www.spiderseek.com)

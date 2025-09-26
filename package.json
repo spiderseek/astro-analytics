@@ -1,6 +1,6 @@
 {
   "name": "@spiderseek/astro-analytics",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "An Astro Integration for Spiderseek AI Analytics and Tracking.",
   "keywords": [
     "astro",
@@ -10,6 +10,10 @@
     "seo",
     "spiderseek"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/spiderseek/astro-analytics.git"
+  },
   "type": "module",
   "sideEffects": false,
   "engines": {
