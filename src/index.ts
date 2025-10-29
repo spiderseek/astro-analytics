@@ -17,14 +17,14 @@ export interface SpiderseekOptions {
 
 /**
  * Astro integration: injects a literal external <script> only for production builds.
- * The script URL is hardcoded to https://js.spiderseek.com/spiderseek.js?id=SITE_ID
+ * The script URL is hardcoded to https://spiderseekjs.com/spiderseek.js?id=SITE_ID
  * Operates on built HTML files in `astro:build:done`.
  */
 export default function spiderseek(options: SpiderseekOptions): AstroIntegration {
   const { siteId, exclude = [], tagId = 'spiderseek-sdk' } = options
   if (!siteId) throw new Error('[spiderseek] options.siteId is required')
 
-  const BASE_URL = 'https://js.spiderseek.com/spiderseek.js'
+  const BASE_URL = 'https://spiderseekjs.com/spiderseek.js'
   const SCRIPT_HTML = `<script id="${escapeHtml(
     tagId
   )}" async src="${BASE_URL}?id=${encodeURIComponent(siteId)}"></script>`

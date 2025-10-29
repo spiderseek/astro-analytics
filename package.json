@@ -1,7 +1,7 @@
 {
   "name": "@spiderseek/astro-analytics",
-  "version": "1.0.6",
-  "description": "An Astro Integration for Spiderseek AI Analytics and Tracking.",
+  "version": "1.0.7",
+  "description": "Astro Integration for Spiderseek. The World's Smallest Website Analytics and Tracking Script.",
   "keywords": [
     "astro",
     "withastro",

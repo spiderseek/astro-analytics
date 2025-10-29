@@ -8,7 +8,7 @@ Spiderseek integration for Astro that allows you to track your website analytics
 The script URL is hardcoded as:
 
 ```html
-<script async src="https://js.spiderseek.com/spiderseek.js?id=YOUR_SITE_ID"></script>
+<script async src="https://spiderseekjs.com/spiderseek.js?id=YOUR_SITE_ID"></script>
 ```
 
 ---
@@ -86,7 +86,7 @@ After (with `@spiderseek/astro-analytics`):
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>My Astro Site</title>
-+ <script id="spiderseek-sdk" async src="https://js.spiderseek.com/spiderseek.js?id=XX-XXXXXX"></script>
++ <script id="spiderseek-sdk" async src="https://spiderseekjs.com/spiderseek.js?id=XX-XXXXXX"></script>
 </head>
 ```
 
